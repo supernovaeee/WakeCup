@@ -20,17 +20,12 @@ ul a{
     text-decoration: none;
 }
 nav .logo{
-    background-color: #331A00;
     width: 24%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-nav .logo img{
-    width: 100%;
-    padding: 2px;
+    height: 68px;
     background-image: url("/Assets/Logo/WakeCup_500x500.png");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 /* nav .logo .title{
     width: 60%;
