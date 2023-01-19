@@ -22,19 +22,20 @@ ul a{
 nav .logo{
     background-color: #331A00;
     width: 24%;
+    height: 50px;
     display: flex;
     align-items: center;
 }
 nav .logo img{
-    width: 40%;
-    height: auto;
+    width: 100%;
     padding: 2px;
-    border-radius: 50%;
+    background-image: url("/Assets/Logo/WakeCup_500x500.png");
+    background-repeat: no-repeat;
 }
-nav .logo .title{
+/* nav .logo .title{
     width: 60%;
     padding-left: 12px;
-}
+} */
 nav ul{
     background-color: #663300;
     display: flex;
