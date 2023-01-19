@@ -17,6 +17,10 @@ nav{
 }
 a{
     color: white;
+    text-decoration: none;
+}
+.active a{
+    color:#331A00;
 }
 nav .logo{
     background-color: #331A00;
@@ -47,4 +51,10 @@ nav ul{
 }
 nav ul li{
     padding: 8px;
+    border-radius: 20%;
+}
+nav ul li.active{
+    /* opacity: 50%; */
+    
+    background-color:blanchedalmond;
 }
