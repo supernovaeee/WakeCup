@@ -51,6 +51,17 @@ nav ul li.active{
     color:#331A00;
 }
 
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #663300;
+    color: white;
+    text-align: center;
+    padding: 1vh;
+}
+
 /* Tablets (600-800px) will resize well with the above settings */
 
 
