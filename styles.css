@@ -1,7 +1,7 @@
 :root{
     background-color: blanchedalmond;
     font-family: 'DM Serif Display', serif;
-    max-width: 1280px;
+    max-width: 2400px;
     min-height: 100vh;
     margin: 0 auto;
 }
@@ -20,21 +20,17 @@ ul a{
     text-decoration: none;
 }
 nav .logo{
-    background-color: #331A00;
     width: 24%;
-    display: flex;
-    align-items: center;
+    min-height: 11vh;
+    background-image: url("/Assets/Logo/WakeCup_500x500.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-nav .logo img{
-    width: 40%;
-    height: auto;
-    padding: 2px;
-    border-radius: 50%;
-}
-nav .logo .title{
+/* nav .logo .title{
     width: 60%;
     padding-left: 12px;
-}
+} */
 nav ul{
     background-color: #663300;
     display: flex;
@@ -45,6 +41,7 @@ nav ul{
     list-style: none;
     margin: 0px;
     width: 76%;
+    /* height: 10vh; */
     padding: 12px;
 }
 nav ul li{
