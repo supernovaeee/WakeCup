@@ -51,6 +51,75 @@ nav ul li.active{
     color:#331A00;
 }
 
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(90%);
+    opacity: 50%; */
+    /* margin: 5vh 10vh 5vh 10vh;
+    border-radius: 30%; */
+
+}
+
+@keyframes appear{
+    from{
+        opacity: 0.0;
+        top: -100px;
+    }
+    to{
+        opacity: 1.0;
+        top: 0.0;
+    }
+}
+.banner .transbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100%;
+}
+.banner .heading{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    animation: appear 1.5s ease-in-out 0s forwards;
+    border: 5px solid #1c0e00;
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    height: 30vh;
+    margin: 0px;
+    border: 1px solid black;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(1, 30vh);
+    /* grid-gap: 4px; */
+  }
+
+.gallery .ourCafes{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 95%;
+    backdrop-filter: sepia(90%);
+}
+.gallery .theSource{
+    background-image: url(https://cdn.pixabay.com/photo/2019/01/03/19/13/coffee-3911706_960_720.jpg);
+
+    
+}
+
 .footer{
     position: absolute;
     left: 0;
