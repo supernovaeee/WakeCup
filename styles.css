@@ -9,7 +9,6 @@ body{
     margin: 0px !important;
 }
 nav{
-    height: 11vh;
     color: white;
     display: flex;
     flex-direction: row;
@@ -20,23 +19,23 @@ ul a{
     text-decoration: none;
 }
 nav .logo{
-    width: 24%;
     background-image: url("/Assets/Logo/WakeCup_500x500.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    width: 24%;
 }
 
 nav ul{
-    background-color: #613312 ;
+    background-color: #602D0D ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    margin: 0px;
     width: 76%;
+    margin: 0px;
     padding: 12px;
 }
 nav ul li{
@@ -51,24 +50,24 @@ nav ul li.active{
 }
 
 .banner{
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     height: 41vh;
-    background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
-    background-position: center;
-    background-size: cover;
 }
 
 .banner .transbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     backdrop-filter: contrast(65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100vw;
     height: 100%;
 }
@@ -77,8 +76,7 @@ nav ul li.active{
     font-weight: bold;
     font-size: 24px;
     position: relative;
-    animation: appear 1.5s ease-in-out 0s forwards;
-    /* border: 5px solid #1c0e00; */
+    animation: appear-top 1.5s ease-in-out 0s forwards;
 }
 
 .gallery {
@@ -95,11 +93,11 @@ nav ul li.active{
   }
 
 .gallery-item .transbox{
+    backdrop-filter: contrast(65%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    backdrop-filter: contrast(65%);
     
 }
 .gallery-item .transbox a{
@@ -107,11 +105,11 @@ nav ul li.active{
 }
 .gallery .ourCafes {
     background-image: url(https://cdn.pixabay.com/photo/2019/10/22/12/34/speciality-coffee-4568580_960_720.jpg);
+    background-position: center;
+    background-size: cover;
     width: 50vw;
     height: 100%;
     margin: 0px;
-    background-position: center;
-    background-size: cover;
 }
 .gallery .theSource{
     background-image: url(https://cdn.pixabay.com/photo/2019/01/09/18/08/plant-3923923_960_720.jpg);
@@ -122,49 +120,47 @@ nav ul li.active{
     margin: 0px;
     
 }
-.gallery .ourCafes h2{
+.gallery h2{
     color:white;
     font-weight: bold;
     font-size: 24px;
     position: relative;
-    animation: appear-2 1.5s ease-in-out 0s forwards;
+}
+.gallery .ourCafes h2{
+    animation: appear-left 1.5s ease-in-out 0s forwards;
 }
 .gallery .theSource h2{
-    color:white;
-    font-weight: bold;
-    font-size: 24px;
-    position: relative;
-    animation: appear-3 1.5s ease-in-out 0s forwards;
+    animation: appear-right 1.5s ease-in-out 0s forwards;
 }
+
 .maintext{
     font-size: 18px;
     padding: 12px;
 }
 .actionButton{
-    background-color:#613312;
+    background-color:#602D0D;
     color: white;
     font-weight: bold;
-    width: 26vw;
-    padding: 16px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    width: 26vw;
     margin-bottom: 48px;
     margin-left: 37vw;
     margin-right: 37vw;
+    padding: 16px;
     border-radius: 2%;
     transition-duration: 0.7s;
     cursor: pointer;
     }
 .footer{
+    background-color: #602D0D ;
+    text-align: center;
+    height: 7vh;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #613312 ;
-    color: white;
-    text-align: center;
-    height: 7vh;
 }
 .footer img{
     width: 3em;
@@ -176,14 +172,13 @@ nav ul li.active{
 }
 
 .actionButton:hover{
-    opacity: 70%;
-    color: black;
-    border-color: #331A00;
     background-color: antiquewhite;
-
+    color: black;
+    opacity: 70%;
+    border-color: #331A00;
 }
 
-@keyframes appear{
+@keyframes appear-top{
     from{
         opacity: 0.0;
         top: -100px;
@@ -193,7 +188,7 @@ nav ul li.active{
         top: 0.0;
     }
 }
-@keyframes appear-2{
+@keyframes appear-left{
     from{
         opacity: 0.0;
         left: -100px;
@@ -203,7 +198,7 @@ nav ul li.active{
         left: 0.0;
     }
 }
-@keyframes appear-3{
+@keyframes appear-right{
     from{
         opacity: 0.0;
         right: -100px;
@@ -214,9 +209,7 @@ nav ul li.active{
     }
 }
 /* Tablets (600-800px) will resize well with the above settings */
-
-
-/* Phones */
+/* Phones (<600px) */
 @media all and (max-width: 600px){
     nav {
         flex-direction: column;
@@ -229,12 +222,15 @@ nav ul li.active{
     }
 
     nav ul{
-        width: 100%;
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
     }
 
     nav ul li{
         text-align: center;
+    }
+    .actionButton{
+        padding: 10px;
     }
 }
