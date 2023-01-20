@@ -9,7 +9,7 @@ body{
     margin: 0px !important;
 }
 nav{
-    
+    height: 11vh;
     color: white;
     display: flex;
     flex-direction: row;
@@ -21,7 +21,6 @@ ul a{
 }
 nav .logo{
     width: 24%;
-    min-height: 11vh;
     background-image: url("/Assets/Logo/WakeCup_500x500.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -29,7 +28,7 @@ nav .logo{
 }
 
 nav ul{
-    background-color: #663300;
+    background-color: #613312 ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,14 +56,130 @@ nav ul li.active{
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 40vh;
+    height: 41vh;
     background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
     background-position: center;
     background-size: cover;
-    /* backdrop-filter: blur(90%);
-    opacity: 50%; */
-    /* margin: 5vh 10vh 5vh 10vh;
-    border-radius: 30%; */
+}
+
+.banner .transbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    backdrop-filter: contrast(65%);
+    width: 100vw;
+    height: 100%;
+}
+.banner .heading{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    animation: appear 1.5s ease-in-out 0s forwards;
+    /* border: 5px solid #1c0e00; */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 41vh;
+    margin: 0px;
+  }
+  .gallery-item{
+    transition: scale 500ms ease-in-out, opacity 500ms ease-in-out;
+  }
+
+.gallery-item .transbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    backdrop-filter: contrast(65%);
+    
+}
+.gallery-item .transbox a{
+    text-decoration: none;
+}
+.gallery .ourCafes {
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/22/12/34/speciality-coffee-4568580_960_720.jpg);
+    width: 50vw;
+    height: 100%;
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+}
+.gallery .theSource{
+    background-image: url(https://cdn.pixabay.com/photo/2019/01/09/18/08/plant-3923923_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50vw;
+    height: 100%;
+    margin: 0px;
+    
+}
+.gallery .ourCafes h2{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    animation: appear-2 1.5s ease-in-out 0s forwards;
+}
+.gallery .theSource h2{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    animation: appear-3 1.5s ease-in-out 0s forwards;
+}
+.maintext{
+    font-size: 18px;
+    padding: 12px;
+}
+.actionButton{
+    background-color:#613312;
+    color: white;
+    font-weight: bold;
+    width: 26vw;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 48px;
+    margin-left: 37vw;
+    margin-right: 37vw;
+    border-radius: 2%;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    }
+.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #613312 ;
+    color: white;
+    text-align: center;
+    height: 7vh;
+}
+.footer img{
+    width: 3em;
+}
+
+.gallery-item:hover{
+    scale: 97%;
+    opacity: 60%;
+}
+
+.actionButton:hover{
+    opacity: 70%;
+    color: black;
+    border-color: #331A00;
+    background-color: antiquewhite;
 
 }
 
@@ -78,59 +193,26 @@ nav ul li.active{
         top: 0.0;
     }
 }
-.banner .transbox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    width: 100vw;
-    height: 100%;
+@keyframes appear-2{
+    from{
+        opacity: 0.0;
+        left: -100px;
+    }
+    to{
+        opacity: 1.0;
+        left: 0.0;
+    }
 }
-.banner .heading{
-    color:white;
-    font-weight: bold;
-    font-size: 24px;
-    position: relative;
-    animation: appear 1.5s ease-in-out 0s forwards;
-    border: 5px solid #1c0e00;
+@keyframes appear-3{
+    from{
+        opacity: 0.0;
+        right: -100px;
+    }
+    to{
+        opacity: 1.0;
+        right: 0.0;
+    }
 }
-
-.gallery {
-    display: grid;
-    width: 100%;
-    height: 30vh;
-    margin: 0px;
-    border: 1px solid black;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: repeat(1, 30vh);
-    /* grid-gap: 4px; */
-  }
-
-.gallery .ourCafes{
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg);
-    background-position: center;
-    background-size: cover;
-    opacity: 95%;
-    backdrop-filter: sepia(90%);
-}
-.gallery .theSource{
-    background-image: url(https://cdn.pixabay.com/photo/2019/01/03/19/13/coffee-3911706_960_720.jpg);
-
-    
-}
-
-.footer{
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #663300;
-    color: white;
-    text-align: center;
-    padding: 1vh;
-}
-
 /* Tablets (600-800px) will resize well with the above settings */
 
 
