@@ -9,6 +9,7 @@ body{
     margin: 0px !important;
 }
 nav{
+    min-height: 11vh;
     color: white;
     display: flex;
     flex-direction: row;
@@ -41,6 +42,7 @@ nav ul{
 nav ul li{
     padding: 8px;
     border-radius: 20%;
+    font-size: larger;
 }
 nav ul li.active{
     background-color:blanchedalmond;
