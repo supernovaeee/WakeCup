@@ -79,6 +79,11 @@ nav ul li.active{
     border: 5px solid #331A00;
     
 }
+.banner-coffeeBlends{
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
+    width: 100vw;
+    height: 12vh;
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -104,7 +109,37 @@ nav ul li.active{
     animation: appear-left 1.5s ease-in-out 0s forwards;    
     align-self: center;
 }
+.banner-coffeeBlends .heading{
+    /* animation: appear-left 1.5s ease-in-out 0s forwards;     */
+    text-align: left;
+    margin-left: 2%;
+    font-size: 24px;
 
+}
+
+/* .banner-coffeeBlends .typewriter small {
+    overflow: hidden;
+    border-right: 0.15em solid #331A00;
+    white-space: normal;
+    letter-spacing: 0.15em;
+  }
+  
+.banner-coffeeBlends .typewriter small {
+    animation: typing 10s steps(226, end), blink-caret 0.5s step-end infinite;
+  } */
+/* 
+.maintext{
+    overflow: hidden;
+    border-right: 0.15em solid #331A00;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+}
+.h1-coffeeBlends .typewriter{
+    animation: typing 3.5s steps(13, end), blink-caret 0.5s step-end infinite;
+}
+.maintext-aboutUs .typewriter{
+    animation: typing 10s steps(957, end), blink-caret 0.5s step-end infinite;
+} */
 .gallery {
     display: flex;
     justify-content: center;
@@ -165,7 +200,7 @@ nav ul li.active{
 }
 
 .maintext-aboutUs{
-    margin: 10px 54px 24px 54px;
+    margin: 10px 54px 40px 54px;
     padding: 24px;
     align-self: center;
     text-align: center;
@@ -243,7 +278,30 @@ nav ul li.active{
         right: 0.0;
     }
 }
-/* Tablets (600-800px) will resize well with the above settings */
+/* @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: #331A00;
+    }
+    50% {
+      border-color: transparent;
+    }
+  } */
+/* Tablets (600-800px)*/
+@media all and (max-width: 800px){
+    .banner-coffeeBlends .heading{
+        font-size: 20px;
+    }
+}
 /* Phones (<600px) */
 @media all and (max-width: 600px){
     nav {
@@ -268,4 +326,9 @@ nav ul li.active{
     .actionButton{
         padding: 10px;
     }
+    .banner-coffeeBlends .heading{
+        font-size: 100%;
+    }
 }
+
+  
