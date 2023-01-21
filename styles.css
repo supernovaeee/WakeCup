@@ -42,7 +42,7 @@ nav ul{
 nav ul li{
     padding: 8px;
     border-radius: 20%;
-    font-size: larger;
+    font-size: 20px;
 }
 nav ul li.active{
     background-color:blanchedalmond;
@@ -52,17 +52,29 @@ nav ul li.active{
 }
 
 .banner{
-    background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    height: 41vh;
+    
 }
 
+.banner-index{
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
+    width: 100vw;
+    height: 41vh;
+}
+.banner-aboutUs{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/42/bright-1853624_960_720.jpg);
+    width: 80vw;
+    height: 41vh;
+    margin: 24px;
+    width: 80vw;
+    margin: 48px 10vw 0px 10vw;
+    border: 5px solid #331A00;
+    
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -73,12 +85,20 @@ nav ul li.active{
     width: 100vw;
     height: 100%;
 }
+
 .banner .heading{
     color:white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
     position: relative;
-    animation: appear-top 1.5s ease-in-out 0s forwards;
+}
+
+.banner-index .heading{
+    animation: appear-top 1.5s ease-in-out 0.0s forwards;
+}
+.banner-aboutUs .heading{
+    animation: appear-left 1.5s ease-in-out 0s forwards;    
+    align-self: center;
 }
 
 .gallery {
@@ -125,7 +145,7 @@ nav ul li.active{
 .gallery h2{
     color:white;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
     position: relative;
 }
 .gallery .ourCafes h2{
@@ -136,8 +156,15 @@ nav ul li.active{
 }
 
 .maintext{
-    font-size: 18px;
+    font-size: 22px;
     padding: 12px;
+}
+
+.maintext-aboutUs{
+    margin: 24px 54px 24px 54px;
+    padding: 24px;
+    align-self: center;
+    text-align: center;
 }
 .actionButton{
     background-color:#602D0D;
@@ -145,9 +172,10 @@ nav ul li.active{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     width: 26vw;
-    margin-bottom: 48px;
+    margin-top: 24px;
+    margin-bottom: 100px;
     margin-left: 37vw;
     margin-right: 37vw;
     padding: 16px;
@@ -180,6 +208,7 @@ nav ul li.active{
     border-color: #331A00;
 }
 
+
 @keyframes appear-top{
     from{
         opacity: 0.0;
@@ -193,7 +222,7 @@ nav ul li.active{
 @keyframes appear-left{
     from{
         opacity: 0.0;
-        left: -100px;
+        left: -300px;
     }
     to{
         opacity: 1.0;
@@ -203,7 +232,7 @@ nav ul li.active{
 @keyframes appear-right{
     from{
         opacity: 0.0;
-        right: -100px;
+        right: -300px;
     }
     to{
         opacity: 1.0;
