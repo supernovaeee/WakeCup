@@ -128,11 +128,8 @@ nav ul li.active{
 }
 .gallery-coffeeBlends{
     width: 80vw;
-    margin: 24px 10vw 0px 10vw;
+    margin: 5vw 10vw 0px 10vw;
 
-}
-.textgallery{
-    margin-top: 0px;
 }
 
 .gallery-item{
@@ -176,7 +173,7 @@ nav ul li.active{
     background-size:cover;
     width: 50vw;
     height: 100%;
-    margin: 20px 20px 0px 20px;
+    margin: 0px 20px 0px 0px;
     border: 5px solid #331A00;
     
 }
@@ -186,25 +183,35 @@ nav ul li.active{
     background-size: cover;
     width: 50vw;
     height: 100%;
-    margin: 20px 20px 0px 20px;
+    margin: 0px 0px 0px 20px;
     border: 5px solid #331A00;
     
 }
+
+.textgallery{
+    margin-top: 0px;
+    height: 26vh;
+    width: 80vw;
+    margin: 0px 10vw 11vw 10vw;
+}
+
 .textgallery .uniqueBlends{
     background-image: none;
-    height: 60%;
+    width: 50vw;
+    margin: 0px 20px 0px 0px;
+    border: 5px solid #331A00;
 }
 .textgallery .classics{
     background-image: none;
-    height: 60%;
+    width: 50vw;
+    margin: 0px 0px 0px 20px;
+    border: 5px solid #331A00;
+}
+/* .textgallery .classics{
+    background-image: none;
+    height: 38vh;
 
-}
-.textgallery-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+} */
 
 .gallery h2{
     color:white;
@@ -212,10 +219,24 @@ nav ul li.active{
     font-size: 32px;
     position: relative;
 }
+.gallery .text-ub, .text-c{
+    margin: 1vh 0 0 0;
+    position: relative;
+    height: 50%;
+    padding: 5px;
+    /* border: 2px solid black; */
+}
+.gallery .buttoncontainer-ub,.buttoncontainer-c{
+    height: 50%;
+    /* border: 2px solid black; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
 .gallery p{
     color:#331A00;
-    font-size: 24px;
-    position: relative;
+    font-size: 26px;
+    margin: 2%;
 }
 .gallery .ourCafes h2{
     animation: appear-left 1.5s ease-in-out 0s forwards;
@@ -253,7 +274,8 @@ nav ul li.active{
     cursor: pointer;
     }
 .button-ub, .button-c{
-    margin: auto auto 20px auto;
+    margin: 3.25vh 5px 0px 5px;
+    display: inline-block;
 }
 .footer{
     background-color: #602D0D ;
@@ -315,10 +337,19 @@ nav ul li.active{
         right: 0.0;
     }
 }
+
+@media all and (max-width: 1000px){
+    .gallery p{
+        font-size: 16px;
+    }
+}
 /* Tablets (600-800px)*/
 @media all and (max-width: 800px){
     .banner-coffeeBlends .heading{
         font-size: 20px;
+    }
+    .gallery p{
+        font-size: 15px;
     }
 }
 /* Phones (<600px) */
@@ -348,6 +379,10 @@ nav ul li.active{
     .banner-coffeeBlends .heading{
         font-size: 100%;
     }
+    .gallery p{
+        font-size: 100%;
+    }
+
 }
 
   
