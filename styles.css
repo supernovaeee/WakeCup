@@ -224,6 +224,7 @@ nav ul li.active{
     position: relative;
     height: 50%;
     padding: 5px;
+    /* font-size: 1em; */
     /* border: 2px solid black; */
 }
 .gallery .buttoncontainer-ub,.buttoncontainer-c{
@@ -235,7 +236,7 @@ nav ul li.active{
 }
 .gallery p{
     color:#331A00;
-    font-size: 26px;
+    font-size: 1em;
     margin: 2%;
 }
 .gallery .ourCafes h2{
@@ -380,7 +381,7 @@ nav ul li.active{
         font-size: 100%;
     }
     .gallery p{
-        font-size: 100%;
+        font-size: 70%;
     }
 
 }
