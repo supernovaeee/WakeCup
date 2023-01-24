@@ -8,6 +8,10 @@
 body{
     margin: 0px !important;
 }
+/* body .pageContainer{
+    width: 100vw;
+    
+} */
 h1{
     margin-top: 24px;
     margin-left: 24px;
@@ -84,6 +88,11 @@ nav ul li.active{
     width: 100vw;
     height: 24vh;
 }
+.banner-uniqueBlends{
+    background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
+    width: 100vw;
+    height: 48vh;
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -109,12 +118,11 @@ nav ul li.active{
     animation: appear-left 1.5s ease-in-out 0s forwards;    
     align-self: center;
 }
-.banner-coffeeBlends .heading{
+.banner-coffeeBlends .heading, .banner-uniqueBlends .heading{
     text-align: left;
     margin-left: 2%;
-    font-size: 24px;
+    font-size: 1.8em;
     font-style: italic;
-
 }
 .gallery {
     display: flex;
@@ -207,11 +215,6 @@ nav ul li.active{
     margin: 0px 0px 0px 20px;
     border: 5px solid #331A00;
 }
-/* .textgallery .classics{
-    background-image: none;
-    height: 38vh;
-
-} */
 
 .gallery h2{
     color:white;
@@ -274,9 +277,80 @@ nav ul li.active{
     transition-duration: 0.7s;
     cursor: pointer;
     }
+.actionButton.menu-button{
+    margin: 24px;
+}
 .button-ub, .button-c{
     margin: 3.25vh 5px 0px 5px;
     display: inline-block;
+}
+.menu {
+    display: grid;
+    width: 80vw;
+    /* height: 100vh;  */
+    margin: 5vh 0 0 5vw;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: repeat(3, 45vw);
+    grid-gap: 5px;
+    border: 1px solid black;
+  }
+  
+.menu-item {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* transition: scale 500ms ease-in-out, opacity 500ms ease-in-out; */
+  }
+  /* .menu-item:hover {
+    scale: 0.95;
+    opacity: 0.5;
+  } */
+.menu-item img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    align-self: center;
+    border: 1px solid black;
+}
+.menu-item-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.menu-item-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.menu-item-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.menu-item-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.menu-item-5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.menu-item-6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.menu-text{
+    border: 1px solid black;
+    padding: 2%;
+    height: 50%;
+}
+.menu-button-container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .footer{
     background-color: #602D0D ;
