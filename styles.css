@@ -408,9 +408,18 @@ nav ul li.active{
     }
 }
 
+@media all and (max-width: 1500px){
+    .menu-text{
+        font-size: 85%;
+    }
+}
+
 @media all and (max-width: 1000px){
     .gallery p{
         font-size: 16px;
+    }
+    .menu-text{
+        font-size: 80%;
     }
 }
 /* Tablets (600-800px)*/
@@ -420,6 +429,9 @@ nav ul li.active{
     }
     .gallery p{
         font-size: 15px;
+    }
+    .menu-text{
+        font-size: 60%;
     }
 }
 /* Phones (<600px) */
@@ -451,6 +463,9 @@ nav ul li.active{
     }
     .gallery p{
         font-size: 1em;
+    }
+    .menu-text{
+        font-size: 50%;
     }
 
 }
