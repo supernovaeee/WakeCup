@@ -90,6 +90,9 @@ nav ul li.active{
     background-image: none;
     height: 10vh;
 }
+.banner.ourCafes{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg);
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -108,7 +111,9 @@ nav ul li.active{
 .banner.contact .transbox{
     background-color: #8d4213;
 }
-
+.banner.ourCafes .transbox{
+    backdrop-filter: contrast(80%);
+}
 .banner .heading{
     color:white;
     font-weight: bold;
@@ -370,11 +375,14 @@ form button{
 .menu.classics,.menu.brewingEquipment, .menu.learnWithUs{
     grid-template-rows: repeat(2, 60vh);
 }
-.menu.learnWithUs{
+.menu.ourCafes,.menu.learnWithUs{
+    /* grid-template-rows: repeat(3, 20vh); */
     grid-template-columns: 1;
     width: 80vw;
 }
-  
+.menu.ourCafes{
+    grid-template-rows: repeat(3, 20vh);
+}
 .menu-item {
     background-color: blanchedalmond;;
     border: 1px solid #602D0D;
@@ -382,9 +390,12 @@ form button{
     flex-direction: column;
     align-items: center;
   }
-.menu-item.learnWithUs{
+.menu-item.learnWithUs, .menu-item.ourCafes{
     width: 80vw;
     height: min-content;
+}
+.menu-item.ourCafes{
+    margin: 0;
 }
 .menu-item img {
     width: 84%;
@@ -402,13 +413,17 @@ form button{
     grid-column: 2/3;
     grid-row: 1/2;
 }
-.menu-item-2.learnWithUs{
+.menu-item-2.learnWithUs,.menu-item-2.ourCafes{
     grid-column: 1/2;
     grid-row: 2/3;
 }
 .menu-item-3 {
     grid-column: 1/2;
     grid-row: 2/3;
+}
+.menu-item-3.ourCafes{
+    grid-column: 1/2;
+    grid-row: 3/4;
 }
 .menu-item-4 {
     grid-column: 2/3;
