@@ -8,7 +8,7 @@
 body{
     margin: 0px !important;
 }
-h1{
+h1,h2{
     margin-top: 24px;
     margin-left: 24px;
     color:#331A00;
@@ -65,21 +65,19 @@ nav ul li.active{
     
 }
 
-.banner-index{
+.banner{
     background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
     width: 100vw;
     height: 41vh;
 }
-.banner-aboutUs{
+.banner.aboutUs{
     background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/42/bright-1853624_960_720.jpg);
-    width: 80vw;
-    height: 41vh;
     width: 80vw;
     margin: 24px 10vw 0px 10vw;
     border: 5px solid #331A00;
     
 }
-.banner-coffeeBlends,.banner-uniqueBlends,.banner-classics{
+.banner.coffeeBlends,.banner.uniqueBlends,.banner.classics, .banner.brewingEquipment{
     background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
     width: 100vw;
     height: 24vh;
@@ -100,21 +98,24 @@ nav ul li.active{
     font-weight: bold;
     font-size: 32px;
     position: relative;
-}
-
-.banner-index .heading{
     animation: appear-top 1.5s ease-in-out 0.0s forwards;
 }
-.banner-aboutUs .heading{
+
+.banner.aboutUs .heading{
     animation: appear-left 1.5s ease-in-out 0s forwards;    
     align-self: center;
 }
-.banner-coffeeBlends .heading, .banner-uniqueBlends .heading{
+.banner.coffeeBlends .heading{
     text-align: left;
     margin-left: 2%;
     font-size: 1.8em;
     font-style: italic;
+    animation: appear-left 1.5s ease-in-out 0s forwards;    
 }
+.banner.brewingEquipment .heading{
+    animation: appear 2s ease-in-out 0s forwards; 
+}
+
 .gallery {
     display: flex;
     text-align: center;
@@ -286,7 +287,7 @@ nav ul li.active{
     grid-template-rows: repeat(3, 60vh);
     border: 1px solid black;
   }
-.menu.classics{
+.menu.classics,.menu.brewingEquipment{
     grid-template-rows: repeat(2, 60vh);
 }
   
@@ -403,6 +404,14 @@ nav ul li.active{
     to{
         opacity: 1.0;
         right: 0.0;
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1.0;
     }
 }
 
