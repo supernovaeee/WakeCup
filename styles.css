@@ -79,15 +79,10 @@ nav ul li.active{
     border: 5px solid #331A00;
     
 }
-.banner-coffeeBlends{
+.banner-coffeeBlends,.banner-uniqueBlends,.banner-classics{
     background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
     width: 100vw;
     height: 24vh;
-}
-.banner-uniqueBlends{
-    background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
-    width: 100vw;
-    height: 48vh;
 }
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
@@ -291,6 +286,9 @@ nav ul li.active{
     grid-template-rows: repeat(3, 60vh);
     border: 1px solid black;
   }
+.menu.classics{
+    grid-template-rows: repeat(2, 60vh);
+}
   
 .menu-item {
     background-color: blanchedalmond;;
