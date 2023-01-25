@@ -93,6 +93,10 @@ nav ul li.active{
 .banner.ourCafes{
     background-image: url(https://cdn.pixabay.com/photo/2016/11/29/12/54/cafe-1869656_960_720.jpg);
 }
+.banner.theSource{
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/12/00/32/coffee-3392168_960_720.jpg);
+
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -539,11 +543,17 @@ form button{
     .menu-text{
         font-size: 80%;
     }
+    .banner.contact .heading{
+        font-size: 1.5em;
+    }
 }
 /* Tablets (600-800px)*/
 @media all and (max-width: 800px){
     .banner-coffeeBlends .heading{
         font-size: 20px;
+    }
+    .banner.contact .heading{
+        font-size: 1em;
     }
     .gallery p{
         font-size: 15px;
@@ -582,6 +592,9 @@ form button{
     .banner.learnWithUs .heading{
         font-size: 1em;
     }
+    .banner.contact .heading{
+        font-size: 1em;
+    }
     .gallery p{
         font-size: 1em;
     }
@@ -591,7 +604,6 @@ form button{
     .menu-text.learnWithUs{
         font-size: 1em;
     }
-
 }
 
   
