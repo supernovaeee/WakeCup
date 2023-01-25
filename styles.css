@@ -81,11 +81,14 @@ nav ul li.active{
 }
 .banner.coffeeBlends,.banner.uniqueBlends,.banner.classics, .banner.brewingEquipment{
     background-image: url(https://cdn.pixabay.com/photo/2016/07/28/18/30/coffee-farm-1548771_960_720.jpg);
-    width: 100vw;
     height: 24vh;
 }
 .banner.brewingEquipment{
     background-image: url(https://cdn.pixabay.com/photo/2019/10/22/12/34/speciality-coffee-4568579_960_720.jpg);
+}
+.banner.contact{
+    background-image: none;
+    height: 10vh;
 }
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
@@ -101,6 +104,9 @@ nav ul li.active{
     justify-content: end;
     backdrop-filter: contrast(60%);
     animation: appear-left 1.5s ease-in-out 0s forwards;   
+}
+.banner.contact .transbox{
+    background-color: #8d4213;
 }
 
 .banner .heading{
@@ -129,12 +135,67 @@ nav ul li.active{
     margin-left: 2%;
     font-size: 1.8em;
     font-style: italic;
-    animation: appear-left 1.5s ease-in-out 0s forwards;    
+    animation: appear-right 1.5s ease-in-out 0s forwards;    
 }
 .banner.brewingEquipment .heading{
     animation: appear 2s ease-in-out 0s forwards; 
 }
+.banner.contact .heading{
+    text-align: center;
+    margin-left: 2%;
+    font-size: 1.8em;
+    font-style: italic;
+    animation: appear-right 1.5s ease-in-out 0s forwards;
+}
+/* Form in Contact Page */
+.form-container{
+    border: 1px solid black;
+    
 
+}
+.name-container,.email-container,.tel-container,
+.radio-container,.city-container,.message-container{
+    /* border: 1px solid black; */
+}
+form{
+    text-align: center;
+    margin-top: 5vh;
+    
+}
+form input,select,textarea{
+    border: transparent;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+}
+.radio-container{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    
+}
+
+.yes-container,.no-container{
+    /* border: 1px solid #602D0D;
+    border-radius: 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0;
+
+}
+form button{
+    border: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    color: white;
+}
 .gallery {
     display: flex;
     text-align: center;
