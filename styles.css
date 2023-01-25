@@ -62,13 +62,15 @@ nav ul li.active{
     display: flex;
     align-items: center;
     text-align: center;
-    
-}
-
-.banner{
     background-image: url(https://cdn.pixabay.com/photo/2020/07/29/08/33/coffee-5447420_960_720.jpg);
     width: 100vw;
     height: 41vh;
+    
+}
+.banner.learnWithUs{
+    background-image: url(Assets/LearnWithUs/LearnWithUsHeader.jpg);
+    background-size: cover;
+    height: 60vh;
 }
 .banner.aboutUs{
     background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/42/bright-1853624_960_720.jpg);
@@ -82,6 +84,9 @@ nav ul li.active{
     width: 100vw;
     height: 24vh;
 }
+.banner.brewingEquipment{
+    background-image: url(https://cdn.pixabay.com/photo/2019/10/22/12/34/speciality-coffee-4568579_960_720.jpg);
+}
 .banner .transbox{
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
@@ -92,6 +97,11 @@ nav ul li.active{
     width: 100vw;
     height: 100%;
 }
+.banner.learnWithUs .transbox{
+    justify-content: end;
+    backdrop-filter: contrast(60%);
+    animation: appear-left 1.5s ease-in-out 0s forwards;   
+}
 
 .banner .heading{
     color:white;
@@ -99,6 +109,15 @@ nav ul li.active{
     font-size: 32px;
     position: relative;
     animation: appear-top 1.5s ease-in-out 0.0s forwards;
+    
+}
+.banner.learnWithUs .heading{
+    text-align: right;
+    /* margin-left: 2%; */
+    /* font-size: 2.8em; */
+    font-style: italic;
+    animation: appear-left 1.5s ease-in-out 0s forwards;  
+    margin: 5%;
 }
 
 .banner.aboutUs .heading{
@@ -285,19 +304,27 @@ nav ul li.active{
     margin-bottom: 10vh;
     grid-template-columns: repeat(2, 25vw);
     grid-template-rows: repeat(3, 60vh);
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
-.menu.classics,.menu.brewingEquipment{
+.menu.classics,.menu.brewingEquipment, .menu.learnWithUs{
     grid-template-rows: repeat(2, 60vh);
+}
+.menu.learnWithUs{
+    grid-template-columns: 1;
+    width: 80vw;
 }
   
 .menu-item {
     background-color: blanchedalmond;;
-    border: 1px solid black;
+    border: 1px solid #602D0D;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+.menu-item.learnWithUs{
+    width: 80vw;
+    height: min-content;
+}
 .menu-item img {
     width: 84%;
     height: 50%;
@@ -313,6 +340,10 @@ nav ul li.active{
 .menu-item-2 {
     grid-column: 2/3;
     grid-row: 1/2;
+}
+.menu-item-2.learnWithUs{
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 .menu-item-3 {
     grid-column: 1/2;
@@ -337,6 +368,10 @@ nav ul li.active{
     height: 50%;
     width: 80%;
     text-align: center;
+}
+.menu-text.learnWithUs{
+    height: 100%;
+    font-size: 1.5em;
 }
 .menu-button-container{
     /* border: 1px solid black; */
