@@ -8,10 +8,6 @@
 body{
     margin: 0px !important;
 }
-/* body .pageContainer{
-    width: 100vw;
-    
-} */
 h1{
     margin-top: 24px;
     margin-left: 24px;
@@ -227,19 +223,15 @@ nav ul li.active{
     position: relative;
     height: 50%;
     padding: 5px;
-    /* font-size: 1em; */
     /* border: 2px solid black; */
 }
 .gallery .buttoncontainer-ub,.buttoncontainer-c{
     height: 50%;
     /* border: 2px solid black; */
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
 }
 .gallery p{
     color:#331A00;
-    font-size: 1em;
+    font-size: 1.5em;
     margin: 2%;
 }
 .gallery .ourCafes h2{
@@ -279,41 +271,41 @@ nav ul li.active{
     }
 .actionButton.menu-button{
     margin: 24px;
+    width: 100%;
 }
 .button-ub, .button-c{
     margin: 3.25vh 5px 0px 5px;
     display: inline-block;
 }
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .menu {
     display: grid;
-    width: 80vw;
-    /* height: 100vh;  */
-    margin: 5vh 0 0 5vw;
-    grid-template-columns: repeat(2, 45vw);
-    grid-template-rows: repeat(3, 45vw);
-    grid-gap: 5px;
+    width: 50vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    grid-template-columns: repeat(2, 25vw);
+    grid-template-rows: repeat(3, 60vh);
     border: 1px solid black;
   }
   
 .menu-item {
-    background-color: white;
+    background-color: blanchedalmond;;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* transition: scale 500ms ease-in-out, opacity 500ms ease-in-out; */
   }
-  /* .menu-item:hover {
-    scale: 0.95;
-    opacity: 0.5;
-  } */
 .menu-item img {
-    width: 50%;
+    width: 84%;
     height: 50%;
     object-fit: cover;
     align-self: center;
-    border: 1px solid black;
+    margin-top: 2%;
+    /* border: 1px solid #331A00; */
 }
 .menu-item-1 {
     grid-column: 1/2;
@@ -341,15 +333,18 @@ nav ul li.active{
 }
 
 .menu-text{
-    border: 1px solid black;
+    /* border: 1px solid #331A00; */
     padding: 2%;
     height: 50%;
+    width: 80%;
+    text-align: center;
 }
 .menu-button-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 }
 .footer{
@@ -455,7 +450,7 @@ nav ul li.active{
         font-size: 100%;
     }
     .gallery p{
-        font-size: 70%;
+        font-size: 1em;
     }
 
 }
