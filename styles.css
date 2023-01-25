@@ -503,11 +503,17 @@ nav ul li.active{
     .banner-coffeeBlends .heading{
         font-size: 100%;
     }
+    .banner.learnWithUs .heading{
+        font-size: 1em;
+    }
     .gallery p{
         font-size: 1em;
     }
     .menu-text{
         font-size: 50%;
+    }
+    .menu-text.learnWithUs{
+        font-size: 1em;
     }
 
 }
