@@ -128,8 +128,6 @@ nav ul li.active{
 }
 .banner.learnWithUs .heading{
     text-align: right;
-    /* margin-left: 2%; */
-    /* font-size: 2.8em; */
     font-style: italic;
     animation: appear-left 1.5s ease-in-out 0s forwards;  
     margin: 5%;
@@ -159,12 +157,6 @@ nav ul li.active{
 /* Form in Contact Page */
 .form-container{
     border: 1px solid black;
-    
-
-}
-.name-container,.email-container,.tel-container,
-.radio-container,.city-container,.message-container{
-    /* border: 1px solid black; */
 }
 form{
     text-align: center;
@@ -181,7 +173,6 @@ form input,select,textarea{
     width: 40%;
 }
 .radio-container{
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center
@@ -189,8 +180,6 @@ form input,select,textarea{
 }
 
 .yes-container,.no-container{
-    /* border: 1px solid #602D0D;
-    border-radius: 5px; */
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 0;
@@ -308,11 +297,9 @@ form button{
     position: relative;
     height: 50%;
     padding: 5px;
-    /* border: 2px solid black; */
 }
 .gallery .buttoncontainer-ub,.buttoncontainer-c{
     height: 50%;
-    /* border: 2px solid black; */
 }
 .gallery p{
     color:#331A00;
@@ -374,13 +361,11 @@ form button{
     margin-bottom: 10vh;
     grid-template-columns: repeat(2, 25vw);
     grid-template-rows: repeat(3, 60vh);
-    /* border: 1px solid black; */
   }
 .menu.classics,.menu.brewingEquipment, .menu.learnWithUs{
     grid-template-rows: repeat(2, 60vh);
 }
 .menu.ourCafes,.menu.learnWithUs{
-    /* grid-template-rows: repeat(3, 20vh); */
     grid-template-columns: 1;
     width: 80vw;
 }
@@ -407,7 +392,6 @@ form button{
     object-fit: cover;
     align-self: center;
     margin-top: 2%;
-    /* border: 1px solid #331A00; */
 }
 .menu-item-1 {
     grid-column: 1/2;
@@ -443,7 +427,6 @@ form button{
 }
 
 .menu-text{
-    /* border: 1px solid #331A00; */
     padding: 2%;
     height: 50%;
     width: 80%;
@@ -454,7 +437,6 @@ form button{
     font-size: 1.5em;
 }
 .menu-button-container{
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,10 +528,22 @@ form button{
     .banner.contact .heading{
         font-size: 1.5em;
     }
+    .banner.uniqueBlends .heading{
+        font-size: 25px;
+    }
 }
 /* Tablets (600-800px)*/
 @media all and (max-width: 800px){
-    .banner-coffeeBlends .heading{
+    .banner.coffeeBlends .heading{
+        font-size: 20px;
+    }
+    .banner.uniqueBlends .heading{
+        font-size: 20px;
+    }
+    .banner.classics .heading{
+        font-size: 20px;
+    }
+    .banner.brewingEquipment .heading{
         font-size: 20px;
     }
     .banner.contact .heading{
@@ -559,7 +553,10 @@ form button{
         font-size: 15px;
     }
     .menu-text{
-        font-size: 60%;
+        font-size: 70%;
+    }
+    .button-ub, .button-c{
+        margin-top: 0;
     }
 }
 /* Phones (<600px) */
@@ -586,10 +583,22 @@ form button{
     .actionButton{
         padding: 10px;
     }
-    .banner-coffeeBlends .heading{
+    .banner.coffeeBlends .heading{
         font-size: 100%;
     }
+    .banner.uniqueBlends .heading{
+        font-size: 100%;
+    }
+    .banner.classics .heading{
+        font-size: 100%;
+    }
+    .banner.brewingEquipment .heading{
+        font-size: 1.2em;
+    }
     .banner.learnWithUs .heading{
+        font-size: 1em;
+    }
+    .banner.theSource .heading{
         font-size: 1em;
     }
     .banner.contact .heading{
@@ -601,8 +610,17 @@ form button{
     .menu-text{
         font-size: 50%;
     }
+    .menu-text.brewingEquipment{
+        font-size: 0.62em;
+    }
+    .menu-text.ourCafes{
+        font-size: 0.75em;
+    }
     .menu-text.learnWithUs{
         font-size: 1em;
+    }
+    .text-ub,.text-c{
+        font-size: 0.85em;
     }
 }
 
